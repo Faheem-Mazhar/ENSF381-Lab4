@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4 – Exercise 3</title>
+    </head>
+    <body>
+        <h1>JavaScript Lab</h1>
+        <script>
+            //arrays and basic methods
+            const classRoster = ["Alice", "Tom", "Charlie", "Diana", "Evan"]
+
+            console.log(classRoster.toString());
+            console.log(classRoster);
+
+            classRoster.push("Fiona", "Nancy");
+
+            classRoster.shift();
+            console.log(classRoster);
+            console.log(classRoster.length);
+
+
+            //objects with nested structures
+            const classInfo = {
+                className: 'ENSF381: Full-Stack Web Development',
+                instuctor:'Dr.Smith',
+                students: classRoster,
+                details:{
+                    semester:'Winter',
+                    year:'2025'
+                }
+            };
+
+            classInfo.schedule = ['Monday', 'Wednesday', 'Friday'];
+            classInfo.instuctor = 'Dr.Deb';
+            console.log(classInfo.className);
+            console.log(classInfo.instuctor);
+            console.log(classInfo.students);
+            console.log(classInfo.details.semester);
+
+            let {className, students} = classInfo;
+            console.log(className, students);
+
+            let {semester, year} = classInfo.details;
+            console.log(semester, year);
+
+            let [student1, student2, ...remainingStudents] = classRoster;
+            console.log(student1, student2);
+            console.log(remainingStudents);
+        </script>
+    </body>
+</html>
