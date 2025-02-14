@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4 – Exercise 1</title>
+    </head>
+    <body>
+        <h1>JavaScript Lab</h1>
+        <script>
+
+            //for varaible declaration
+            let var1 = 1;
+            const var2 = 2;
+            const var3 = 3;
+
+            // trying to assign a new value to var3 which is const meaning it cannot be changed
+            //var3 = 4;
+
+
+            //for string operations
+            let string1 = "Hello, World!";
+            let string2 = "JavaScript is fun!";
+            let length1 = string1.length;
+            let length2 = string2.length;
+            
+            let concantenateString = string1 + string2;
+            console.log(concantenateString);
+
+            let updatedString2 = string2.replace("fun", "awesome");
+
+
+            //for string templates
+            let name = "Alice"
+            let age = 25;
+            let deatiledInfo = `My name is ${name}, and I am ${age} years old`;
+            console.log(deatiledInfo);
+
+
+            //working with dates
+            let date = new Date();
+            console.log(date);
+            console.log(date.getFullYear());
+            console.log(date.getMonth());
+            console.log(date.getDay());
+
+
+            //Sunday is placed at index 0 as today is Friday(when written) and the index is 5 so the next day is Saturday and th elast index being 6
+            const daysofWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            let day = daysofWeek[date.getDay()];
+            console.log(day);
+            
+        </script>
+    </body>
+</html>
