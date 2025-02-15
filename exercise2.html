@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4 – Exercise 2</title>
+    </head>
+    <body>
+        <h1>JavaScript Lab</h1>
+        <script>
+        /* DECLARING FUNCTIONS
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        function subtract(a, b) {
+            return a - b;
+        }
+
+        */
+
+        /* DEFAULT PARAMETERS
+        function add(a, b = 0) {
+            return a + b;
+        }
+
+        function subtract(a, b = 0) {
+            return a - b;
+        }
+
+        */
+
+        /* ARROW FUNCTIONS */
+
+        let add = (a, b) => a + b;
+        let subtract = (a, b) => a - b;
+        let multiply = (a, b) => a * b;
+        let divide = (a, b) => {
+            if (b !== 0) {
+                return a / b;
+            } else {
+                return "Error: Division by zero is prevented";
+            }
+        };
+
+        /* CALLBACK FUNCTION */
+
+        function calculator(a, b, operation) {
+            return operation(a, b);
+        }
+        </script>
+    </body>
+</html>
